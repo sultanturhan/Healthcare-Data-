@@ -1,0 +1,11 @@
+query,query_understanding,knowledge_retrieval,response_relevance,expected_type,actual_type
+Soğan yiyebilir miyim?,1.0,0.5,0.9083019588242295,ingredient,ingredient
+Karnıyarık FODMAP açısından uygun mu?,1.0,1.0,0.9235250645330484,meal,meal
+Kahvaltıda ne yiyebilirim?,0.0,0.0,0.8789484175822173,meal,general
+Hangi meyveler güvenli?,1.0,0.0,0.8980228137515036,food_group,food_group
+Sarımsak kullanabilir miyim?,1.0,1.0,0.9067966741359739,ingredient,ingredient
+Mercimek çorbası içebilir miyim?,1.0,0.6666666666666666,0.8763934595630908,meal,meal
+Süt ürünleri tüketebilir miyim?,1.0,0.0,0.9017393910395133,food_group,food_group
+"İmambayıldı yemek istiyorum, nasıl yapmalıyım?",1.0,0.75,0.8874716621467068,meal,meal
+Mantı yiyebilir miyim?,1.0,1.0,0.8576209862760142,meal,meal
+Pirinç tüketebilir miyim?,1.0,0.5,0.901853640451424,ingredient,ingredient

@@ -1,0 +1,74 @@
+{
+    "test_cases": [
+        {
+            "query": "Soğan yiyebilir miyim?",
+            "expected_classification": "ingredient",
+            "expected_nodes": ["soğan"],
+            "expected_response": "Soğan yüksek FODMAP içeriği nedeniyle düşük FODMAP diyetinde kaçınılması gereken bir besindir. Bunun yerine soğan tozu veya yeşil soğanın yeşil kısmını kullanabilirsiniz.",
+            "actual_response": "Soğan FODMAP içeriği yüksek olduğu için önerilmez. Soğanın yerine yeşil soğanın yeşil kısmını veya soğan aromalı zeytinyağı kullanabilirsiniz."
+        },
+        {
+            "query": "Karnıyarık FODMAP açısından uygun mu?",
+            "expected_classification": "meal",
+            "expected_nodes": ["patlıcan", "kıyma", "soğan", "domates"],
+            "expected_response": "Karnıyarık içindeki patlıcan ve soğan yüksek FODMAP içerir. Ancak tarifi modifiye ederek düşük FODMAP versiyonunu yapabilirsiniz.",
+            "actual_response": "Klasik karnıyarık tarifi patlıcan ve soğan içerdiği için FODMAP diyetine uygun değildir. Ancak soğansız ve az patlıcanlı modifiye bir tarif yapabilirsiniz."
+        },
+        {
+            "query": "Kahvaltıda ne yiyebilirim?",
+            "expected_classification": "meal",
+            "expected_nodes": ["yumurta", "peynir", "ekmek", "zeytin"],
+            "expected_response": "Kahvaltıda glütensiz ekmek, yumurta, laktozsuz peynir, zeytin tüketebilirsiniz. Bal ve reçel gibi yüksek fruktozlu gıdalardan kaçınılmalıdır.",
+            "actual_response": "FODMAP uyumlu bir kahvaltı için glütensiz ekmek, haşlanmış yumurta, laktozsuz peynir ve zeytin tercih edebilirsiniz. Şekerli ürünlerden uzak durun."
+        },
+        {
+            "query": "Hangi meyveler güvenli?",
+            "expected_classification": "food_group",
+            "expected_nodes": ["meyve", "çilek", "portakal", "muz", "kivi"],
+            "expected_response": "Düşük FODMAP diyetinde güvenli meyveler arasında çilek, portakal, mandalina, kivi ve olgun muz bulunur. Elma ve armut gibi meyvelerden kaçınılmalıdır.",
+            "actual_response": "Düşük FODMAP meyveleri: çilek, portakal, mandalina, kivi ve olgun muz. Porsiyon kontrolüne dikkat edilmelidir."
+        },
+        {
+            "query": "Sarımsak kullanabilir miyim?",
+            "expected_classification": "ingredient",
+            "expected_nodes": ["sarımsak"],
+            "expected_response": "Sarımsak yüksek FODMAP içerir ve diyette kaçınılması gerekir. Bunun yerine sarımsak infüze edilmiş zeytinyağı kullanabilirsiniz.",
+            "actual_response": "Sarımsak, soğan gibi yüksek FODMAP içerdiğinden diyette önerilmez. Alternatif olarak sarımsak infüze edilmiş yağ kullanabilirsiniz."
+        },
+        {
+            "query": "Mercimek çorbası içebilir miyim?",
+            "expected_classification": "meal",
+            "expected_nodes": ["mercimek", "soğan", "sarımsak", "havuç"],
+            "expected_response": "Klasik mercimek çorbası soğan, sarımsak ve mercimek içerdiği için yüksek FODMAP içerir. Modifiye edilmiş bir tarif kullanmanız önerilir.",
+            "actual_response": "Geleneksel mercimek çorbası FODMAP diyetine uygun değildir çünkü mercimek, soğan ve sarımsak yüksek FODMAP içerir."
+        },
+        {
+            "query": "Süt ürünleri tüketebilir miyim?",
+            "expected_classification": "food_group",
+            "expected_nodes": ["süt", "yoğurt", "peynir", "ayran"],
+            "expected_response": "Normal süt ürünleri laktoz içerdiği için yüksek FODMAP'tır. Laktozsuz süt, laktozsuz yoğurt ve sert peynirler tercih edilebilir.",
+            "actual_response": "Laktozsuz süt ürünleri ve sert peynirler tüketebilirsiniz. Normal süt, yoğurt ve yumuşak peynirlerden kaçının."
+        },
+        {
+            "query": "İmambayıldı yemek istiyorum, nasıl yapmalıyım?",
+            "expected_classification": "meal",
+            "expected_nodes": ["patlıcan", "soğan", "sarımsak", "domates"],
+            "expected_response": "İmambayıldı geleneksel haliyle yüksek FODMAP içerir. Soğan ve sarımsak kullanmadan, patlıcan miktarını azaltarak modifiye edebilirsiniz.",
+            "actual_response": "İmambayıldı tarifini FODMAP uyumlu hale getirmek için soğan ve sarımsak yerine aromalı yağ kullanın, patlıcan miktarını azaltın."
+        },
+        {
+            "query": "Mantı yiyebilir miyim?",
+            "expected_classification": "meal",
+            "expected_nodes": ["un", "kıyma", "soğan", "yoğurt"],
+            "expected_response": "Klasik mantı hem hamurunda gluten hem de iç harcında soğan içerdiği ve yoğurtla servis edildiği için yüksek FODMAP içerir.",
+            "actual_response": "Normal mantı FODMAP diyetine uygun değildir. Glütensiz un, soğansız iç harç ve laktozsuz yoğurt ile özel tarif yapılabilir."
+        },
+        {
+            "query": "Pirinç tüketebilir miyim?",
+            "expected_classification": "ingredient",
+            "expected_nodes": ["pirinç"],
+            "expected_response": "Pirinç düşük FODMAP içerir ve güvenle tüketilebilir. Önerilen porsiyon miktarlarına dikkat edilmelidir.",
+            "actual_response": "Evet, pirinç düşük FODMAP bir besindir ve diyetinizde güvenle tüketebilirsiniz. Porsiyon kontrolüne dikkat edin."
+        }
+    ]
+}
